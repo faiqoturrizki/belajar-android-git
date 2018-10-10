@@ -33,5 +33,12 @@ public class LoginActivity extends AppCompatActivity {
 
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
+
+        Bundle send = new Bundle();
+
+        send.putString("nama", n);
+        intent.putExtras(send);
+        startActivity(intent);
+        finish();
     }
 }

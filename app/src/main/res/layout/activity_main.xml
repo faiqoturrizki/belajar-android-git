@@ -9,15 +9,48 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/helo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello:" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tambahuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD USER"
+            android:onClick="adduser"/>
+
+        <Button
+            android:id="@+id/datauser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIST USER"
+            android:onClick="listuser"/>
 
     <Button
         android:id="@+id/bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/go_to_fragment"
+        android:onClick="kefragment"
        />
 
         <Button
