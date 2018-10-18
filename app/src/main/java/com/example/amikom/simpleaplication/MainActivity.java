@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.amikom.simpleaplication.activity.AddUserActivity;
+import com.example.amikom.simpleaplication.activity.DetailActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void listuser(View view) {
+        Intent intent = new Intent(MainActivity.this,DetailActivity.class);
+        startActivity(intent);
     }
 
     public void adduser(View view) {
+        Intent intent = new Intent(MainActivity.this,AddUserActivity.class);
+        startActivity(intent);
     }
 }
